@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Карточка товара" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page page__inner">
+        <div class="page__header">
+          <div class="page__container">
+            <nav class="page__breadcrumbs breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Разделочные ножи</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__current">Нож Снегирь</span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__container">
+            <div class="product__main main-product">
+              <div class="main-product__images images-product">
+                <div class="images-product__slider">
+                  <div class="images-product__swiper">
+                    <div class="images-product__slide-ibg">
+                      <img src="@img/product/01.jpg" alt="" />
+                    </div>
+                    <div class="images-product__slide-ibg">
+                      <img src="@img/product/01.jpg" alt="" />
+                    </div>
+                    <div class="images-product__slide-ibg">
+                      <img src="@img/product/01.jpg" alt="" />
+                    </div>
+                    <div class="images-product__slide-ibg">
+                      <img src="@img/product/01.jpg" alt="" />
+                    </div>
+                    <div class="images-product__slide-ibg">
+                      <img src="@img/product/01.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="images-product__thumbs thumbs-images">
+                  <div class="thumbs-images__swiper">
+                    <div class="thumbs-images__slide-ibg">
+                      <img src="@img/product/01.jpg" alt="" />
+                    </div>
+                    <div class="thumbs-images__slide-ibg">
+                      <img src="@img/product/01.jpg" alt="" />
+                    </div>
+                    <div class="thumbs-images__slide-ibg">
+                      <img src="@img/product/01.jpg" alt="" />
+                    </div>
+                    <div class="thumbs-images__slide-ibg">
+                      <img src="@img/product/01.jpg" alt="" />
+                    </div>
+                    <div class="thumbs-images__slide-ibg">
+                      <img src="@img/product/01.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-product__body body-product">
+                <div class="body-product__header header-product">
+                  <div class="header-product__line">
+                    <h1 class="header-product__title">Нож Снегирь</h1>
+                    <a class="header-product__link _icon-compare" href="#"></a>
+                    <a class="header-product__link _icon-favorite" href="#"></a>
+                  </div>
+                  <div class="header-product__rating rating">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input
+                          class="rating__item"
+                          type="radio"
+                          value="1"
+                          name="rating"
+                        />
+                        <input
+                          class="rating__item"
+                          type="radio"
+                          value="2"
+                          name="rating"
+                        />
+                        <input
+                          class="rating__item"
+                          type="radio"
+                          value="3"
+                          name="rating"
+                        />
+                        <input
+                          class="rating__item"
+                          type="radio"
+                          value="4"
+                          name="rating"
+                        />
+                        <input
+                          class="rating__item"
+                          type="radio"
+                          value="5"
+                          name="rating"
+                        />
+                      </div>
+                    </div>
+                    <div class="rating__value">3.6</div>
+                  </div>
+                </div>
+                <div class="body-product__table table-product">
+                  <div class="table-product__label">Артикул</div>
+                  <div class="table-product__value">AF0000001952</div>
+                  <div class="table-product__label">Торговая марка:</div>
+                  <div class="table-product__value">WUESTHOF (Германия)</div>
+                  <div class="table-product__label">Серия:</div>
+                  <div class="table-product__value">
+                    Ножи серии Classic Ikon
+                  </div>
+                  <div class="table-product__label">Бонусные баллы:</div>
+                  <div class="table-product__value">38</div>
+                </div>
+                <div class="body-product__options options-product">
+                  <div class="options-product__label">Сталь</div>
+                  <div class="options-product__value">
+                    <select class="form" name="form[]">
+                      <option value="1" selected>Пункт №1</option>
+                      <option value="2">Пункт №2</option>
+                      <option value="3">Пункт №3</option>
+                      <option value="4">Пункт №4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="body-product__actions actions-product">
+                  <div class="actions-product__price">3 865</div>
+                  <div class="actions-product__row">
+                    <div class="actions-product__quantity quantity">
+                      <button
+                        class="quantity__button quantity__button_plus"
+                        type="button"
+                      ></button>
+                      <div class="quantity__input">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          name="form[]"
+                          value="1"
+                        />
+                      </div>
+                      <button
+                        class="quantity__button quantity__button_minus"
+                        type="button"
+                      ></button>
+                    </div>
+                    <div class="actions-product__buttons">
+                      <a class="actions-product__cart button" href="#"
+                        ><span class="_icon-cart">В корзину</span></a
+                      >
+                      <a
+                        class="actions-product__button button button_black"
+                        href="#"
+                        >Купить в 1 клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-tabs="992" class="product__info product-info">
+              <nav data-tabs-titles class="tabs-navigation">
+                <button class="product-info__title _tab-active" type="submit">
+                  Описание
+                </button>
+                <button class="product-info__title" type="submit">
+                  Характеристика
+                </button>
+                <button class="product-info__title" type="submit">
+                  Отзывы
+                </button>
+                <button class="product-info__title" type="submit">
+                  Доставка
+                </button>
+              </nav>
+              <div data-tabs-body class="product-info__content">
+                <div class="product-info__body">
+                  Легкий удобный нож с клинком, имеющим пологие вогнутые
+                  линзовидные спуски на две трети ширины клинка, образующие
+                  тонкое, прекрасно режущее лезвие толщиной около 0,6 мм в
+                  районе подводов. Обух клинка со спинкой рукояти имеет одну
+                  плавную дугообразную линию. На пяте перед рукоятью есть
+                  подпальцевый вырез для точных работ. Необходимо проявлять
+                  некоторую осторожность при работе с большими боковыми
+                  нагрузками на лезвие ножа, ввиду небольшой толщины клинка в
+                  рабочей части. Монтаж рукояти накладной плашечный. На навершии
+                  рукояти, функцию которого выполняет выступающий из под плашек
+                  хвостовик, имеется отверстие под темляк. Этот нож удобный
+                  помощник при работе с продуктами и охоте на боровую и
+                  водоплавающую дичь.
+                </div>
+                <div class="product-info__body">
+                  Легкий, удобный нож с клинком, имеющим пологие вогнутые
+                  линзовидные спуски на две трети ширины клинка, образующие
+                  тонкое, прекрасно режущее лезвие толщиной около 0,6 мм в
+                  районе подводов. Обух клинка со спинкой рукояти имеет одну
+                  плавную дугообразную линию. На пяте перед рукоятью есть
+                  подпальцевый вырез для точных работ. Необходимо проявлять
+                  некоторую осторожность при работе с большими боковыми
+                  нагрузками на лезвие ножа, ввиду небольшой толщины клинка в
+                  рабочей части. Монтаж рукояти накладной плашечный. На навершии
+                  рукояти, функцию которого выполняет выступающий из под плашек
+                  хвостовик, имеется отверстие под темляк. Этот нож удобный
+                  помощник при работе с продуктами и охоте на боровую и
+                  водоплавающую дичь.
+                </div>
+                <div class="product-info__body">
+                  Легкий удобный нож с клинком, имеющим пологие вогнутые
+                  линзовидные спуски на две трети ширины клинка, образующие
+                  тонкое, прекрасно режущее лезвие толщиной около 0,6 мм в
+                  районе подводов. Обух клинка со спинкой рукояти имеет одну
+                  плавную дугообразную линию. На пяте перед рукоятью есть
+                  подпальцевый вырез для точных работ. Необходимо проявлять
+                  некоторую осторожность при работе с большими боковыми
+                  нагрузками на лезвие ножа, ввиду небольшой толщины клинка в
+                  рабочей части. Монтаж рукояти накладной плашечный. На навершии
+                  рукояти, функцию которого выполняет выступающий из под плашек
+                  хвостовик, имеется отверстие под темляк. Этот нож удобный
+                  помощник при работе с продуктами и охоте на боровую и
+                  водоплавающую дичь.
+                </div>
+                <div class="product-info__body">
+                  Легкий, удобный нож с клинком, имеющим пологие вогнутые
+                  линзовидные спуски на две трети ширины клинка, образующие
+                  тонкое, прекрасно режущее лезвие толщиной около 0,6 мм в
+                  районе подводов. Обух клинка со спинкой рукояти имеет одну
+                  плавную дугообразную линию. На пяте перед рукоятью есть
+                  подпальцевый вырез для точных работ. Необходимо проявлять
+                  некоторую осторожность при работе с большими боковыми
+                  нагрузками на лезвие ножа, ввиду небольшой толщины клинка в
+                  рабочей части. Монтаж рукояти накладной плашечный. На навершии
+                  рукояти, функцию которого выполняет выступающий из под плашек
+                  хвостовик, имеется отверстие под темляк. Этот нож удобный
+                  помощник при работе с продуктами и охоте на боровую и
+                  водоплавающую дичь.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>
